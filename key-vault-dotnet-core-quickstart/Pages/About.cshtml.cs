@@ -23,7 +23,7 @@ namespace key_vault_dotnet_core_quickstart.Pages
         {
             
                      Message =  "Client secret password = " + _configuration["password"];
-                     Message2 = "Client secret id = " + _configuration["ipaddress"];
+                     Message2 = "Client secret id to show = " + _configuration["ipaddress"];
         }
     }
 }
