@@ -10,6 +10,7 @@ namespace key_vault_dotnet_core_quickstart.Pages
     public class AboutModel : PageModel
     {
         public string Message { get; set; }
+        public string Message2 { get; set; }
 
         public AboutModel(IConfiguration configuration)
         {
@@ -20,8 +21,9 @@ namespace key_vault_dotnet_core_quickstart.Pages
 
         public void OnGet()
         {
-            Message = "Client secret id = " + _configuration["ipaddress"] 
-                      "Client secret password = " + _configuration["password"];
+            
+                     Message =  "Client secret password = " + _configuration["password"];
+                     Message2 = "Client secret id = " + _configuration["ipaddress"];
         }
     }
 }
