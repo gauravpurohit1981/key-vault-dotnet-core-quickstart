@@ -22,7 +22,7 @@ namespace key_vault_dotnet_core_quickstart.Pages
         public void OnGet()
         {
             
-                     Message =  "Client secret password = " + _configuration["password"];
+                     Message =  "Client secret passwords = " + _configuration["password"];
                      Message2 = "Client secret id = " + _configuration["ipaddress"];
         }
     }
